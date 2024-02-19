@@ -22,6 +22,11 @@ const Product = (props) => {
       <div className="price" style={{ color: "red" }}>
         {price}
       </div>
+      {quantity !== 0 && (
+        <div className="quantity" style={{ color: "black", fontSize: "0.8em" }}>
+          Available: {quantity}
+        </div>
+      )}
     </div>
   );
 };
